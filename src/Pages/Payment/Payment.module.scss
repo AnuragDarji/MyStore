@@ -1,0 +1,233 @@
+.paymentPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 2rem;
+}
+
+.paymentContainer {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.paymentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  
+  h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+  }
+}
+
+.securePayment {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+  color: #27ae60;
+}
+
+.amountDisplay {
+  display: flex;
+  justify-content: space-between;
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  
+  .amount {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.3rem;
+  }
+}
+
+.paymentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow: hidden;
+
+  label {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    font-weight: 500;
+  }
+  
+  input {
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s;
+    
+    &:focus {
+      border-color: #3498db;
+      box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+      outline: none;
+    }
+    
+    &::placeholder {
+      color: #bdc3c7;
+    }
+  }
+}
+
+.cardDetails {
+  display: flex;
+  gap: 1rem;
+  
+  .expiry {
+    flex: 1;
+  }
+  
+  .cvv {
+    flex: 1;
+  }
+}
+
+.payButton {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 1rem;
+  
+  &:hover {
+    background: #2980b9;
+  }
+  
+  &:disabled {
+    background: #bdc3c7;
+    cursor: not-allowed;
+  }
+}
+
+.paymentMethods {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  
+  img {
+    height: 24px;
+    opacity: 0.7;
+    transition: all 0.3s;
+    
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.successContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  
+  h2 {
+    color: #27ae60;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.successIcon {
+  font-size: 4rem;
+  color: #27ae60;
+  margin-bottom: 1rem;
+}
+
+.successAmount {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.deliveryInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  width: 100%;
+  
+  p {
+    margin: 0;
+    color: #7f8c8d;
+  }
+}
+
+.shippingIcon {
+  color: #3498db;
+}
+
+.orderDetails {
+  margin: 1.5rem 0;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.continueShopping {
+  background: #2c3e50;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+  
+  &:hover {
+    background: #1a252f;
+  }
+}
+
+// Responsive styles
+@media (max-width: 600px) {
+  .paymentPage {
+    padding: 1rem;
+  }
+  
+  .paymentContainer {
+    padding: 1.5rem;
+  }
+  
+  .cardDetails {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}

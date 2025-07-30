@@ -4,6 +4,7 @@ import Header from './component/Header/Header';
 import Product from './component/Product/Product';
 import Cart from './component/Cart/Cart';
 import AboutPage from './Pages/AboutPage/AboutPage';
+import Payment from './Pages/Payment/Payment';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/payment" element={<Payment />} />
       </Routes>
     </Router>
   );

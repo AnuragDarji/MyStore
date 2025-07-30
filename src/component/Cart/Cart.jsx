@@ -1,7 +1,11 @@
 import React from "react";
 import styles from "./Cart.module.scss";
 import { useDispatch, useSelector } from "react-redux";
-import { addItem, removeItem } from "../../Redux/Slice/cartSlice";
+import {
+  addItem,
+  removeItem,
+  removeAllOfItem,
+} from "../../Redux/Slice/cartSlice";
 import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
@@ -9,7 +13,10 @@ const Cart = () => {
   const items = useSelector((state) => state.cart);
   const navigate = useNavigate();
 
-  const total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  const total = items.reduce(
+    (sum, item) => sum + item.price * item.quantity,
+    0
+  );
   const tax = total * 0.08;
   const grandTotal = total + tax;
 
@@ -91,7 +98,7 @@ const Cart = () => {
                     </span>
                     <button
                       className={styles.removeItem}
-                      onClick={() => dispatch(removeItem(item.id))}
+                      onClick={() => dispatch(removeAllOfItem(item.id))}
                       aria-label="Remove item"
                     >
                       ×
@@ -127,7 +134,7 @@ const Cart = () => {
               >
                 Continue Shopping
               </button>
-              <button className={styles.checkoutButton}>
+              <button className={styles.checkoutButton} onClick={() => navigate("/payment", { state: { total: grandTotal } })}>
                 Proceed to Checkout
               </button>
             </div>
