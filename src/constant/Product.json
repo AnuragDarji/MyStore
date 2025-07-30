@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphones",
+    "price": 99.99,
+    "description": "High-quality wireless headphones with noise cancellation.",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=250&h=200&fit=crop"
+  },
+  {
+    "id": 2,
+    "name": "Smart Watch",
+    "price": 199.99,
+    "description": "Feature-rich smartwatch with health monitoring.",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=250&h=200&fit=crop"
+  },
+  {
+    "id": 3,
+    "name": "Bluetooth Speaker",
+    "price": 59.99,
+    "description": "Portable speaker with 20hr battery life.",
+    "image": "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=250&h=200&fit=crop"
+  },
+  {
+    "id": 4,
+    "name": "Gaming Mouse",
+    "price": 49.99,
+    "description": "Ergonomic gaming mouse with RGB lighting.",
+    "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=250&h=200&fit=crop"
+  },
+  {
+    "id": 5,
+    "name": "Mechanical Keyboard",
+    "price": 89.99,
+    "description": "Durable keyboard with customizable keys.",
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=250&h=200&fit=crop"
+  },
+  {
+    "id": 6,
+    "name": "4K Monitor",
+    "price": 299.99,
+    "description": "Ultra HD monitor with vibrant colors.",
+    "image": "https://images.unsplash.com/photo-1591370874773-6702e8f12fd8?w=250&h=200&fit=crop"
+  },
+  {
+    "id": 7,
+    "name": "External SSD",
+    "price": 129.99,
+    "description": "1TB high-speed external solid-state drive.",
+    "image": "https://images.unsplash.com/photo-1591488320449-011701bb6704?w=250&h=200&fit=crop"
+  },
+  {
+    "id": 8,
+    "name": "Fitness Tracker",
+    "price": 69.99,
+    "description": "Water-resistant fitness tracker with sleep monitoring.",
+    "image": "https://images.unsplash.com/photo-1576243345690-4e4b79b63288?w=250&h=200&fit=crop"
+  },
+  {
+    "id": 9,
+    "name": "Drone",
+    "price": 399.99,
+    "description": "High-performance drone with 4K camera.",
+    "image": "https://images.unsplash.com/photo-1507582020474-9a35b7d455d9?w=250&h=200&fit=crop"
+  },
+  {
+    "id": 10,
+    "name": "Tablet",
+    "price": 249.99,
+    "description": "Lightweight tablet with 10.1-inch display.",
+    "image": "https://images.unsplash.com/photo-1546054454-aa26e2b734c7?w=250&h=200&fit=crop"
+  },
+  {
+    "id": 11,
+    "name": "Smartphone Gimbal",
+    "price": 119.99,
+    "description": "Stabilizer for smooth video recording on phones.",
+    "image": "https://images.unsplash.com/photo-1579972668140-f7da53ccc2a6?w=250&h=200&fit=crop"
+  },
+  {
+    "id": 12,
+    "name": "Webcam",
+    "price": 39.99,
+    "description": "1080p webcam with built-in microphone.",
+    "image": "https://images.unsplash.com/photo-1551269901-5c5e14c25df7?w=250&h=200&fit=crop"
+  },
+  {
+    "id": 13,
+    "name": "Portable Charger",
+    "price": 34.99,
+    "description": "10,000mAh power bank with fast charging.",
+    "image": "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=250&h=200&fit=crop"
+  },
+  {
+    "id": 14,
+    "name": "VR Headset",
+    "price": 499.99,
+    "description": "Immersive virtual reality headset with motion tracking.",
+    "image": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=250&h=200&fit=crop"
+  },
+  {
+    "id": 15,
+    "name": "Wireless Charger",
+    "price": 24.99,
+    "description": "Fast wireless charger for compatible smartphones.",
+    "image": "https://images.unsplash.com/photo-1737882171913-f4ced0ce73d8?w=250&h=200&fit=crop"
+  }
+]

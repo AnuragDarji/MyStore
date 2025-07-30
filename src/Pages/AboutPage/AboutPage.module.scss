@@ -1,0 +1,346 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2c3e50;
+$text-color: #333;
+$light-gray: #f8f9fa;
+$white: #ffffff;
+$shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+$border-radius: 8px;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.aboutPage {
+  color: $text-color;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+// Hero Section
+.heroSection {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../assets/images/about-hero.jpg') center/cover no-repeat;
+  height: 400px;
+  @include flex-center;
+  color: $white;
+  text-align: center;
+  margin-bottom: 60px;
+
+  .heroContent {
+    max-width: 800px;
+    padding: 20px;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 0;
+    }
+  }
+}
+
+// About Section
+.aboutSection {
+  padding: 60px 0;
+  background-color: $light-gray;
+
+  .container {
+    @include container;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .aboutContent {
+    flex: 1;
+
+    h2 {
+      font-size: 2rem;
+      color: $secondary-color;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+  }
+
+  .aboutImage {
+    flex: 1;
+    border-radius: $border-radius;
+    overflow: hidden;
+    box-shadow: $shadow;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+  }
+}
+
+// Values Section
+.valuesSection {
+  padding: 80px 0;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    color: $secondary-color;
+    margin-bottom: 50px;
+  }
+
+  .valuesGrid {
+    @include container;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+
+  .valueCard {
+    background: $white;
+    padding: 30px 20px;
+    border-radius: $border-radius;
+    box-shadow: $shadow;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+
+    .valueIcon {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: $primary-color;
+    }
+
+    p {
+      color: lighten($text-color, 20%);
+    }
+  }
+}
+
+// Team Section
+.teamSection {
+  padding: 60px 0;
+  background-color: $light-gray;
+
+  .container {
+    @include container;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .teamImage {
+    flex: 1;
+    border-radius: $border-radius;
+    overflow: hidden;
+    box-shadow: $shadow;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .teamContent {
+    flex: 1;
+
+    h2 {
+      font-size: 2rem;
+      color: $secondary-color;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+// Delivery Section
+.deliverySection {
+  padding: 60px 0;
+
+  .container {
+    @include container;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .deliveryContent {
+    flex: 1;
+
+    h2 {
+      font-size: 2rem;
+      color: $secondary-color;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin-top: 20px;
+      padding-left: 20px;
+
+      li {
+        margin-bottom: 10px;
+        position: relative;
+
+        &::before {
+          content: '✓';
+          color: $primary-color;
+          font-weight: bold;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .deliveryImage {
+    flex: 1;
+    border-radius: $border-radius;
+    overflow: hidden;
+    box-shadow: $shadow;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}
+
+// CTA Section
+.ctaSection {
+  padding: 80px 0;
+  background-color: $primary-color;
+  color: $white;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+  }
+
+  .shopButton {
+    background-color: $white;
+    color: $primary-color;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: $shadow;
+
+    &:hover {
+      background-color: darken($white, 10%);
+      transform: translateY(-3px);
+    }
+  }
+}
+
+// Responsive Styles
+@media (max-width: 992px) {
+  .aboutSection .container,
+  .teamSection .container,
+  .deliverySection .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .aboutImage,
+  .teamImage,
+  .deliveryImage {
+    order: -1;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    height: 300px;
+
+    .heroContent {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .valuesGrid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+    gap: 20px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .heroSection {
+    height: 250px;
+
+    .heroContent {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .valuesGrid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .ctaSection {
+    padding: 60px 20px;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
