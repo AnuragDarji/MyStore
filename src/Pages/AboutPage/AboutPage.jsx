@@ -4,6 +4,10 @@ import teamImage from "../../assets/images/team.jpg";
 import storeImage from "../../assets/images/store.jpg";
 import deliveryImage from "../../assets/images/delivery.jpg";
 import { useNavigate } from "react-router-dom";
+import icon0 from "../../assets/icons/badge.png"
+import icon1 from "../../assets/icons/customer-service.png"
+import icon2 from "../../assets/icons/fast-delivery.png";
+import icon3 from "../../assets/icons/value.png";
 
 const AboutPage = () => {
   const navigate = useNavigate();
@@ -46,7 +50,9 @@ const AboutPage = () => {
         <h2>Our Core Values</h2>
         <div className={styles.valuesGrid}>
           <div className={styles.valueCard}>
-            <div className={styles.valueIcon}>💎</div>
+            <div className={styles.valueIcon}>
+                <img className={styles.imgIcon} src={icon0} alt="Quality" />
+            </div>
             <h3>Quality</h3>
             <p>
               We source only the finest products and stand behind everything we
@@ -54,7 +60,9 @@ const AboutPage = () => {
             </p>
           </div>
           <div className={styles.valueCard}>
-            <div className={styles.valueIcon}>💰</div>
+            <div className={styles.valueIcon}>
+                <img className={styles.imgIcon} src={icon3} alt="value" />
+            </div>
             <h3>Value</h3>
             <p>
               Great products shouldn't break the bank. We work hard to keep
@@ -62,12 +70,16 @@ const AboutPage = () => {
             </p>
           </div>
           <div className={styles.valueCard}>
-            <div className={styles.valueIcon}>🚚</div>
+            <div className={styles.valueIcon}>
+                <img className={styles.imgIcon} src={icon2} alt="Delivery" />
+            </div>
             <h3>Fast Delivery</h3>
             <p>Get your orders quickly with our efficient shipping network.</p>
           </div>
           <div className={styles.valueCard}>
-            <div className={styles.valueIcon}>❤️</div>
+            <div className={styles.valueIcon}>
+                <img className={styles.imgIcon} src={icon1} alt="Customer Care" />
+            </div>
             <h3>Customer Care</h3>
             <p>
               Your satisfaction is our top priority. We're here to help 24/7.

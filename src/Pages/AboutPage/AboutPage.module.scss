@@ -22,14 +22,14 @@ $border-radius: 8px;
 
 .aboutPage {
   color: $text-color;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
 }
 
 // Hero Section
 .heroSection {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../assets/images/about-hero.jpg') center/cover no-repeat;
+    url("../../assets/images/about-hero.jpg") center/cover no-repeat;
   height: 400px;
   @include flex-center;
   color: $white;
@@ -128,8 +128,21 @@ $border-radius: 8px;
     }
 
     .valueIcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-size: 2.5rem;
       margin-bottom: 15px;
+
+      .imgIcon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        padding: 5px;
+        border: 2px solid $primary-color;
+        display: block;
+        object-fit: cover;
+      }
     }
 
     h3 {
@@ -217,7 +230,7 @@ $border-radius: 8px;
         position: relative;
 
         &::before {
-          content: '✓';
+          content: "✓";
           color: $primary-color;
           font-weight: bold;
           margin-right: 10px;
